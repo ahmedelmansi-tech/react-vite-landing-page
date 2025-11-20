@@ -20,19 +20,19 @@ const Navbar = () => {
 
           <div className="hidden md:flex items-center space-x-6 lg:space-x-8">
             <a
-              href="#"
+              href="#feature"
               className="text-gray-300 hover:text-white text-sm lg:text-base"
             >
               Features
             </a>
             <a
-              href="#"
+              href="#pricing"
               className="text-gray-300 hover:text-white text-sm lg:text-base"
             >
               Pricing
             </a>
             <a
-              href="#"
+              href="#testimonials"
               className="text-gray-300 hover:text-white text-sm lg:text-base"
             >
               Testionials
@@ -53,25 +53,28 @@ const Navbar = () => {
       </div>
       {/* Hamburger Menu */}
       {mobileMenOpen && (
-        <div className="md:hidden bg-slate-950/20 backdrop-blur-lg border-t border-slate-800">
-          <div className="flex flex-col">
+        <div className="md:hidden bg-slate-950/20 backdrop-blur-lg border-t border-slate-800 duration-300 slide-in-from-top">
+          <div className="flex flex-col space-y-4 p-4">
             <a
-              href="#"
+              href="#feature"
+              onClick={() => setMobileMenuOpen(false)}
               className="text-gray-300 hover:text-white text-sm lg:text-base"
             >
               Features
             </a>
             <a
-              href="#"
+              href="#pricing"
+              onClick={() => setMobileMenuOpen(false)}
               className="text-gray-300 hover:text-white text-sm lg:text-base"
             >
               Pricing
             </a>
             <a
-              href="#"
+              href="#testimonials"
+              onClick={() => setMobileMenuOpen(false)}
               className="text-gray-300 hover:text-white text-sm lg:text-base"
             >
-              Testionials
+              Testimonials
             </a>
           </div>
         </div>
