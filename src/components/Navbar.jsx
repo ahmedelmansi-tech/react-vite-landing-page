@@ -1,4 +1,4 @@
-import { Heading1, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import logo from "../assets/logo.png";
 import { useState } from "react";
 
