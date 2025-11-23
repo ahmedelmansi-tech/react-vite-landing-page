@@ -11,6 +11,12 @@
       animation-name: slideIn;
   }
 
+  .slide-in-from-bottom{
+      animation-name: slideOut;
+  }
+
+
+
   .duration-300 {
       animation-duration: 300ms;
   }
@@ -19,10 +25,49 @@
       animation-duration: 200ms;
   }
 
+
+  /* DELAY */
+
+  .delay-100{
+    animation-delay: 100ms;
+  }
+  .delay-200{
+    animation-delay: 200ms;
+  }
+  .delay-300{
+    animation-delay: 300ms;
+  }
+
+  .delay-400{
+    animation-delay: 400ms;
+  }
+   .delay-500{
+    animation-delay: 500ms;
+  }
+   .delay-700{
+    animation-delay: 700ms;
+  }
    @keyframes slideIn {
     from {
       opacity: 0;
       transform: translateY(-1rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+
+
+
+
+
+  
+   @keyframes slideOut {
+    from {
+      opacity: 0;
+      transform: translateY(1rem);
     }
     to {
       opacity: 1;
