@@ -9,8 +9,8 @@ function App() {
     <h1 className="min-h-screen bg-slate-900 text-white overflow-hidden">
       <Navbar />
       <Hero />
-      {/*  <Features />
-      <Testimonials />
+      <Features />
+      {/* <Testimonials />
       <Footer /> */}
     </h1>
   );

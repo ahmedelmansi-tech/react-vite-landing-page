@@ -1,10 +1,4 @@
-import {
-  ArrowBigRight,
-  ChevronDown,
-  Play,
-  Sparkle,
-  Sparkles,
-} from "lucide-react";
+import { ArrowBigRight, ChevronDown, Play, Sparkles } from "lucide-react";
 import { useState, useEffect } from "react";
 import { codeExamples } from "../data/CodeExamples";
 import SyntaxHighlighter from "react-syntax-highlighter";
