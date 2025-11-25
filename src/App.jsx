@@ -13,7 +13,7 @@ function App() {
       <Features />
       <Pricing />
       <Testimonials />
-      {/*  <Footer /> */}
+      <Footer />
     </h1>
   );
 }
