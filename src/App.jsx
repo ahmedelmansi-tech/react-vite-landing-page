@@ -12,8 +12,8 @@ function App() {
       <Hero />
       <Features />
       <Pricing />
-      {/* <Testimonials />
-      <Footer /> */}
+      <Testimonials />
+      {/*  <Footer /> */}
     </h1>
   );
 }
