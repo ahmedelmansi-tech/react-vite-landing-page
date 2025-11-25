@@ -76,12 +76,13 @@ const Pricing = () => {
             return (
               <div
                 key={key}
-                className={`relative bg-slate-900 backdrop-blur-xl border rounded-xl p-6 sm:rounded-2xl flex flex-col ${
+                className={`relative bg-slate-900 backdrop-blur-xl border rounded-xl p-6 sm:rounded-2xl flex flex-col h-full${
                   plan.mostPopular
                     ? "border-blue-500 shadow-2xl shadow-white/10 lg:scale-105"
                     : "border-slate-700 hover:border-slate-600"
                 }`}
               >
+                {/* MOST POPULAR LABEL */}
                 {plan.mostPopular && (
                   <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 z-10">
                     <div className="flex items-center space-x-1.5 sm:space-x-2 text-xs sm:text-sm  font-semibold bg-linear-to-b from-bue-500 to-cyan-500 px-2 py-1 rounded-full shadow-lg">
@@ -123,11 +124,11 @@ const Pricing = () => {
                 </ul>
 
                 <button
-                  className={`group w-full lg:w-auto ${
+                  className={`mt-auto mb-10 group w-full lg:w-auto ${
                     plan.mostPopular
                       ? "bg-linear-to-b from-blue-500 to-blue-300"
                       : "bg-white/10 border border-white/30 hover:border-white/10"
-                  } font-semibold sm:font-base flex items-center  justify-center space-x-1 px-5 py-2 rounded-xl mb-3 trasition-all hover:scale-103 duration-200 slide-in-from-bottom`}
+                  } font-semibold sm:font-base flex items-center  justify-center space-x-1 px-5 py-2 rounded-xl mb-3 trasition-all hover:scale-103 duration-200`}
                 >
                   <span> Get Started</span>
                 </button>
